@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio</title>
+</head>
+<body>
+<div id="overlay"></div>
+<div class="card" id="pixCard">
+  <button class="close-button" onclick="closePixCard()">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnqlpndu1FtEaFg1VGuJVXO8XU7sdaEx7Bmw&s" alt="Fechar">
+  </button>
+  <div class="card-body">
+    <h2 class="card-title">FAZ O PIX AI CURIOSO!</h2>
+    <p class="card-text">
+      To Lizo!
+    </p>
+    <a href="https://pixgg.com/TropinhaDo7" class="donate-button" target="_blank">Pix</a>
+  </div>
+</div>
+
+  <header class="container text-center">
+  <header>
+    <h2>Meu Portifolio</h2>
+    <p>JS / HTML / CSS / NODE</p>
+  </header>
+
+
+  <img src="https://i.pinimg.com/736x/6a/82/1a/6a821afca64d3fa117efa2ad351a103f.jpg" class="foto-perfil">
+
+  <div class="section" id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>projetinho do elon musk</p>
+  </div>
+
+  <div class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>JavaScript</span>
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>Node.js</span>
+    </div>
+  </div>
+
+  <div class="section" id="projetos">
+    <h2>Projetos</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <a href="https://link-do-projeto1.com" target="_blank">
+          <img src="data:image/png;base64,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" >
+        </a>
+        <h3>Projeto 1</h3>
+        <p>feito pra ser feito</p>
+      </div>
+
+      <div class="project-card">
+        <a href="https://link-do-projeto2.com" target="_blank">
+          <img src="data:image/png;base64,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">
+        </a>
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto 2</p>
+      </div>
+
+      <div class="project-card">
+        <a href="https://link-do-projeto3.com" target="_blank">
+          <img src="data:image/png;base64,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">
+        </a>
+        <h3>Projeto 3</h3>
+        <p>Descrição do projeto 3.</p>
+      </div>
+
+    </div>
+  </div>
+  </header>
+  <div class="section" id="contato">
+    <h2>Contato</h2>
+    <p>Email: brabodocodigo@deepweb.com</p>
+    <p>Insta:@naalma</p>
+  </div>
+
+  <footer>
+    &copy; CHAMA NO PIX
+  </footer>
+  <script>
+    function closePixCard() {
+      document.getElementById('pixCard').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    function showPixCard() {
+      document.getElementById('pixCard').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

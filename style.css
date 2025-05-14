@@ -1,0 +1,163 @@
+/* Geral */
+body {
+  margin: 0;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ /* Cabeçalho */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ff00;
+}
+header h1 {
+  margin: 0;
+  color: #00ff00;
+}
+
+/* Perfil */
+.foto-perfil {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ff00;
+  margin: 20px auto 0;
+  display: block;
+}
+
+/* Seções */
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background-color: #333;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 500px;
+  color: #00ffcc;
+}
+
+/* Projetos */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  color: #f1f1f1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #00ffcc77;
+}
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-card h3 {
+  margin: 15px 0 10px;
+  color: #00ff00;
+}
+.project-card p {
+  padding: 0 15px 15px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #666;
+  font-size: 14px;
+}
+
+
+/* E o Pix? */
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #111;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 10000;
+  box-shadow: 0 0 20px #00ff00aa;
+}
+
+.card .close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card .close-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #00ff00;
+}
+
+.card-text {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.donate-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #00cc00;
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: none; /* Inicialmente escondido */
+}
